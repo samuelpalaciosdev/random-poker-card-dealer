@@ -4,6 +4,21 @@ const card = document.querySelector('.card');
 const number = document.querySelector('.number');
 const btn = document.querySelector('.btn');
 
+// Onload function
+
+window.onload = () => {
+  card.classList.add(generateRandomSuit());
+  number.innerHTML = generateRandomNumber();
+};
+
+// Event listener
+
+btn.addEventListener('click', (e) => {
+  card.classList.remove(generateRandomSuit());
+  card.classList.add(generateRandomSuit());
+  number.innerHTML = generateRandomNumber();
+});
+
 // Functions
 
 const generateRandomNumber = () => {
