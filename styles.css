@@ -45,6 +45,7 @@ body {
   bottom: 1rem;
   right: 1rem;
   font-size: 7rem;
+  transform: rotate(180deg);
 }
 
 /* Add suits */
