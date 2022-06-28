@@ -23,3 +23,58 @@ body {
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.25);
   background-color: #ffff;
 }
+
+/* Add suits top right and top left*/
+
+.card::before {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 7rem;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 6rem;
+}
+
+.card::after {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 7rem;
+}
+
+/* Add suits */
+
+.card.spades::before,
+.card.spades::after {
+  content: '\2660';
+}
+
+.card.clubs::before,
+.card.clubs::after {
+  content: '\2663';
+}
+
+.card.hearts::before,
+.card.hearts::after {
+  content: '\2665';
+  color: red;
+}
+
+.card.diamonds::before,
+.card.diamonds::after {
+  content: '\2666';
+  color: red;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1em 2em;
+  margin-top: 1rem;
+  color: white;
+}
